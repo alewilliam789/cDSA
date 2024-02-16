@@ -1,0 +1,17 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-isystem./include",
+      "-Wall",
+      "-pedantic",
+      "-Werror",
+      "-Wextra",
+      "-g",
+      "hash.c"
+    ],
+    "directory": "/home/alex/repos/c-what-you-can-do/hash",
+    "file": "/home/alex/repos/c-what-you-can-do/hash/hash.c"
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-isystem./include",
+      "-isystem../../lib/include",
+      "-Wall",
+      "-pedantic",
+      "-Werror",
+      "-Wextra",
+      "-g",
+      "hashtable.c"
+    ],
+    "directory": "/home/alex/repos/c-what-you-can-do/data-structures/hashtable",
+    "file": "/home/alex/repos/c-what-you-can-do/data-structures/hashtable/hashtable.c"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-isystem./include",
+      "-isystem../../lib/include",
+      "-Wall",
+      "-pedantic",
+      "-Werror",
+      "-Wextra",
+      "-g",
+      "hashtable.test.c"
+    ],
+    "directory": "/home/alex/repos/c-what-you-can-do/data-structures/hashtable",
+    "file": "/home/alex/repos/c-what-you-can-do/data-structures/hashtable/hashtable.test.c"
+  }
+]

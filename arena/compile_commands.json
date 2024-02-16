@@ -1,0 +1,32 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-isystem./include",
+      "-Wall",
+      "-pedantic",
+      "-Werror",
+      "-Wextra",
+      "-g",
+      "arena.c"
+    ],
+    "directory": "/home/alex/repos/c-what-you-can-do/arena",
+    "file": "/home/alex/repos/c-what-you-can-do/arena/arena.c"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-isystem./include",
+      "-Wall",
+      "-pedantic",
+      "-Werror",
+      "-Wextra",
+      "-g",
+      "arena.test.c"
+    ],
+    "directory": "/home/alex/repos/c-what-you-can-do/arena",
+    "file": "/home/alex/repos/c-what-you-can-do/arena/arena.test.c"
+  }
+]

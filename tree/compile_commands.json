@@ -1,0 +1,34 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-isystem./include",
+      "-isystem../../arena/include",
+      "-Wall",
+      "-pedantic",
+      "-Werror",
+      "-Wextra",
+      "-g",
+      "binarytree.test.c"
+    ],
+    "directory": "/home/alex/repos/c-what-you-can-do/data-structures/tree",
+    "file": "/home/alex/repos/c-what-you-can-do/data-structures/tree/binarytree.test.c"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-isystem./include",
+      "-isystem../../arena/include",
+      "-Wall",
+      "-pedantic",
+      "-Werror",
+      "-Wextra",
+      "-g",
+      "binarytree.c"
+    ],
+    "directory": "/home/alex/repos/c-what-you-can-do/data-structures/tree",
+    "file": "/home/alex/repos/c-what-you-can-do/data-structures/tree/binarytree.c"
+  }
+]

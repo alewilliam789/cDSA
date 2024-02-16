@@ -1,0 +1,34 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-isystem./include",
+      "-isystem../../arena/include",
+      "-Wall",
+      "-pedantic",
+      "-Werror",
+      "-Wextra",
+      "-g",
+      "heap.c"
+    ],
+    "directory": "/home/alex/repos/c-what-you-can-do/data-structures/heap",
+    "file": "/home/alex/repos/c-what-you-can-do/data-structures/heap/heap.c"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-isystem./include",
+      "-isystem../../arena/include",
+      "-Wall",
+      "-pedantic",
+      "-Werror",
+      "-Wextra",
+      "-g",
+      "heap.test.c"
+    ],
+    "directory": "/home/alex/repos/c-what-you-can-do/data-structures/heap",
+    "file": "/home/alex/repos/c-what-you-can-do/data-structures/heap/heap.test.c"
+  }
+]
