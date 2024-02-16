@@ -23,3 +23,5 @@ make test
 ./a.out
 ```
 
+### Side note
+I broke this off from the c-what-you-can-do repository. If you would like to see the full commit history I kept that repository up to check it out.
