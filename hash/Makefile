@@ -1,21 +1,27 @@
-test : hash.c hash.test.c 
-	gcc -isystem./include -Wall -pedantic -Werror -Wextra -g hash.c hash.test.c
+file_header = -isystem./include
+library_headers = -isystem../lib/include
+libraries_path = -L../lib
+libraries =
+library_build_path = ../lib/
 
-library : 
-	- rm ../../lib/libhash.so
-	-rm ../../lib/include/hash.h
-	gcc -isystem./include -c -Wall -pedantic -Werror -Wextra -fPIC hash.c 
+
+test : hash.c hash.test.c 
+	gcc $(file_header) $(library_headers) -Wall -pedantic -Werror -Wextra -g hash.c hash.test.c $(libraries_path) $(libraries)
+
+library : hash.c
+	- rm ../lib/libhash.so
+	gcc $(file_header) $(library_headers) -c -Wall -pedantic -Werror -Wextra -fPIC hash.c $(libraries_path) $(libraries)
 	gcc -shared -o libhash.so hash.o
 	- rm hash.o
-	mv ./libhash.so ../lib/
-	cp ./include/hash.h ../lib/include/
+	mv ./libhash.so $(library_build_path)
+	cp ./include/hash.h $(library_build_path)/include
 
-json : hash.c 
+json : hash.c hash.test.c
 	- rm compile_commands.json
-	bear -- gcc -isystem./include -Wall -pedantic -Werror -Wextra -g hash.c
+	bear -- make test
 	- rm -r a.out
 
-debug: a.out
+debug : a.out
 	gdb a.out
 
 clean : 
